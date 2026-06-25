@@ -11,11 +11,11 @@ from rank import generate_reasoning
 
 st.set_page_config(page_title="Redrob Candidate Ranker Sandbox", layout="wide")
 
-st.title("🎯 Redrob Candidate Ranker Sandbox")
+st.title("Redrob Candidate Ranker Sandbox")
 st.write("Upload a candidate sample (`.jsonl`) to rank the candidates against the Senior AI Engineer Job Description.")
 
 # Job Description Viewer
-with st.expander("📄 View Job Description (Target Role)"):
+with st.expander("View Job Description (Target Role)"):
     try:
         with open("job_description.md", "r", encoding="utf-8") as f:
             st.markdown(f.read())
@@ -125,12 +125,12 @@ if uploaded_file is not None:
             csv_data = csv_buffer.getvalue()
             
             st.download_button(
-                label="📥 Download Ranked Results CSV",
+                label="Download Ranked Results CSV",
                 data=csv_data,
                 file_name="ranked_candidates.csv",
                 mime="text/csv"
             )
             
             # Display results
-            st.subheader("🏆 Top Ranked Candidates")
+            st.subheader("Top Ranked Candidates")
             st.dataframe(df_results.head(50), use_container_width=True)
