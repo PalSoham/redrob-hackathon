@@ -20,7 +20,7 @@ team_members:
 # Code and reproducibility
 # ============================================================================
 github_repo: "https://github.com/PalSoham/redrob-hackathon"
-sandbox_link: "https://huggingface.co/spaces/PalSoham2005/redrob-ranker"
+sandbox_link: "https://redrob-hackathon.streamlit.app/"
 
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./hard_coder.csv"
 
