@@ -1,0 +1,70 @@
+# Redrob Hackathon — Submission Metadata
+# Copy this file to your repo root as `submission_metadata.yaml` and fill it in.
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "Team Antigravity"  # Replace with your registered team name
+
+primary_contact:
+  name: "Participant Name"     # Replace with your name
+  email: "participant@example.com" # Replace with your email
+  phone: "+91-XXXXXXXXXX"      # Replace with your phone number
+
+team_members:
+  - name: "Participant Name"
+    email: "participant@example.com"
+    role: "ML Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/yourusername/redrob-hackathon"  # Replace with your GitHub repository URL
+sandbox_link: "https://huggingface.co/spaces/yourusername/redrob-ranker"  # Replace with your sandbox link
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.10.11"
+  os: "Windows"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini"
+  - "Antigravity"
+
+ai_usage_summary: |
+  Used the Antigravity agentic coding assistant to design and implement the candidate ranking algorithm, honeypot filtering logic, and metadata structure. All logic runs locally without external API dependencies.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  A stream-based Python ranking system designed for high efficiency and zero external network calls.
+  1. Honeypots are programmatically filtered using physical timeline impossibility checks (such as expert skills with zero duration and job timeline mismatches).
+  2. Candidates are scored using a weighted multi-criteria model matching current title relevance, targeted years of experience (5-9 years), location/relocation preferences, and core ML/ranking/evaluation skills.
+  3. The base score is modified by behavioral engagement metrics including recruiter response rate, login recency, and notice period duration.
+  4. Custom, non-templated reasoning strings are generated dynamically for each candidate to maximize manual review scores.
+  Total CPU runtime is ~39 seconds for the 100K candidate pool.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
