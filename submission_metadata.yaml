@@ -19,8 +19,8 @@ team_members:
 # ============================================================================
 # Code and reproducibility
 # ============================================================================
-github_repo: "https://github.com/yourusername/redrob-hackathon"  # Replace with your GitHub repository URL
-sandbox_link: "https://huggingface.co/spaces/yourusername/redrob-ranker"  # Replace with your sandbox link
+github_repo: "https://github.com/PalSoham/redrob-hackathon"
+sandbox_link: "https://huggingface.co/spaces/PalSoham/redrob-ranker"
 
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
