@@ -7,14 +7,14 @@
 team_name: "Hard Coder"  # Replace with your registered team name
 
 primary_contact:
-  name: "Participant Name"     # Replace with your name
-  email: "participant@example.com" # Replace with your email
-  phone: "+91-XXXXXXXXXX"      # Replace with your phone number
+  name: "Soham Pal"     # Replace with your name
+  email: "palsoham2020@gmail.com" # Replace with your email
+  phone: "+91-7047694955"      # Replace with your phone number
 
 team_members:
-  - name: "Participant Name"
-    email: "participant@example.com"
-    role: "ML Engineer"
+  - name: "Soham Pal"
+    email: "palsoham2020@gmail.com"
+    role: "AI/ML Engineer"
 
 # ============================================================================
 # Code and reproducibility
@@ -28,10 +28,10 @@ reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./hard_
 # Compute environment
 # ============================================================================
 compute:
-  platform: "Local PC"
-  cpu_cores: 8
-  ram_gb: 16
-  python_version: "3.10.11"
+  platform: "Windows-10-10.0.26200-SP0"
+  cpu_cores: 16
+  ram_gb: 32
+  python_version: "3.10.0"
   os: "Windows"
   uses_gpu_for_inference: false
   has_network_during_ranking: false
@@ -46,13 +46,13 @@ ai_tools_used:
   - "Antigravity"
 
 ai_usage_summary: |
-  Used the Antigravity agentic coding assistant to design and implement the candidate ranking algorithm, honeypot filtering logic, and metadata structure. All logic runs locally without external API dependencies.
+  Used the Antigravity agentic coding assistant to design and implement the streamlit frontend, honeypot filtering logic, and metadata structure. All logic runs locally without external API dependencies.
 
 # ============================================================================
 # Approach summary
 # ============================================================================
 methodology_summary: |
-  A stream-based Python ranking system designed for high efficiency and zero external network calls.
+  A streamlit based Python ranking system designed for high efficiency and zero external network calls.
   1. Honeypots are programmatically filtered using physical timeline impossibility checks (such as expert skills with zero duration and job timeline mismatches).
   2. Candidates are scored using a weighted multi-criteria model matching current title relevance, targeted years of experience (5-9 years), location/relocation preferences, and core ML/ranking/evaluation skills.
   3. The base score is modified by behavioral engagement metrics including recruiter response rate, login recency, and notice period duration.
