@@ -6,7 +6,7 @@ This repository contains the ranking system developed for the **Intelligent Cand
 
 1. **Clone the repository**:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/PalSoham/redrob-hackathon
    cd redrob-hackathon
    ```
 
