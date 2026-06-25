@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import re
 
 # Import the core logic directly
-from rank import calculate_score, generate_reasoning
+from rank import generate_reasoning
 
 st.set_page_config(page_title="Redrob Candidate Ranker Sandbox", layout="wide")
 
