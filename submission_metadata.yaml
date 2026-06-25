@@ -42,7 +42,6 @@ compute:
 # AI tools declaration
 # ============================================================================
 ai_tools_used:
-  - "Gemini"
   - "Antigravity"
 
 ai_usage_summary: |

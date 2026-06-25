@@ -1,3 +1,14 @@
+---
+title: Redrob Candidate Ranker Sandbox
+emoji: 🔍
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: 1.30.0
+app_file: app.py
+pinned: false
+---
+
 # Redrob Intelligent Candidate Discovery & Ranking
 
 This repository contains the ranking system developed for the **Intelligent Candidate Discovery & Ranking Challenge** to identify the top 100 candidates for a **Senior AI Engineer — Founding Team** role.
