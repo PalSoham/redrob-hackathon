@@ -133,4 +133,4 @@ if uploaded_file is not None:
             
             # Display results
             st.subheader("Top Ranked Candidates")
-            st.dataframe(df_results.head(50), use_container_width=True)
+            st.dataframe(df_results, use_container_width=True)
