@@ -106,9 +106,9 @@ if uploaded_file is not None:
             # Sort
             scored_candidates.sort(key=lambda x: (-x[1], x[0]))
             
-            # Write ranked list
+            # Write ranked list (limit to top 100 candidates)
             results = []
-            for rank, (cid, score, c) in enumerate(scored_candidates, 1):
+            for rank, (cid, score, c) in enumerate(scored_candidates[:100], 1):
                 reasoning = generate_reasoning(c)
                 results.append({
                     "rank": rank,
