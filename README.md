@@ -26,7 +26,7 @@ This repository contains the ranking system developed for the **Intelligent Cand
 Run the following command to execute the ranking system and generate the submission CSV:
 
 ```bash
-python rank.py --candidates ./candidates.jsonl --out ./submission.csv
+python rank.py --candidates ./candidates.jsonl --out ./hard_coder.csv
 ```
 
 ### Constraints Met:

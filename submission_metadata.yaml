@@ -4,7 +4,7 @@
 # ============================================================================
 # Team identity
 # ============================================================================
-team_name: "Team Antigravity"  # Replace with your registered team name
+team_name: "Hard Coder"  # Replace with your registered team name
 
 primary_contact:
   name: "Participant Name"     # Replace with your name
@@ -22,7 +22,7 @@ team_members:
 github_repo: "https://github.com/PalSoham/redrob-hackathon"
 sandbox_link: "https://huggingface.co/spaces/PalSoham/redrob-ranker"
 
-reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./hard_coder.csv"
 
 # ============================================================================
 # Compute environment
