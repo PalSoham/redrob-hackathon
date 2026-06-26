@@ -39,6 +39,20 @@ python rank.py --candidates ./candidates.jsonl --out ./hard_coder.csv
 
 ## Methodology
 
+```mermaid
+graph TD
+    A[Inputs: JD + Candidates JSONL] --> B[Step 1: Sanity & Honeypot Checks]
+    B -- Suspicious Profiles --> C[Disqualify: Score = -999.0]
+    B -- Valid Profiles --> D[Step 2: TF-IDF Text Vectorization]
+    D --> E[Step 3: Cosine Similarity Scoring]
+    E --> F[Step 4: Heuristic Constraints applied: Title, YoE, Location]
+    F --> G[Step 5: Consulting & Outsourcing Penalty check]
+    G --> H[Step 6: Behavioral Signals adjustment]
+    H --> I[Step 7: Sort & Select Top 100 Candidates]
+    I --> J[Step 8: Generate Dynamic Achievement-based Reasoning]
+    J --> K[Outputs: CSV File + Interactive Streamlit UI]
+```
+
 This ranker leverages a hybrid approach combining **TF-IDF Semantic Matching**, **Heuristic Multi-Criteria Scoring**, and **Platform Behavioral Signals**:
 
 1. **Honeypot Exclusion**: Checks each candidate for physical impossibilities:
